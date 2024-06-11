@@ -1849,7 +1849,14 @@
             color: purple;
         }
 
-
+#myVideo {
+     position: relatve;
+     top: 0;
+     left: 0;
+     height:fit-content;
+     width:fit-content;/* 100% of viewport height */
+     
+ }
 
     </style>
 </head>
@@ -1913,6 +1920,12 @@
         </div>
     </header>
 
+<div id="header">
+    <video id="myVideo" autoplay muted loop>
+        <source src="assets/intro1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
 
 
 <section class="code-section bg-gradient-to-b from-white to-[#F2F9FF] font-['Poppins'] lg:py-2" id="jkaj6s">
