@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Block-UP Technologies - Comprehensive Security as a Service (SECaaS)">
     <meta name="twitter:description" content="Outsource your cybersecurity needs with Block-UP Technologies. We provide complete and continuous security solutions to protect your digital assets from any threat.">
-    <meta property="og:image" content="https://landingsite-app-public.s3.us-east-2.amazonaws.com/client-files/f9262859-754c-4465-9290-0072f752581b">
+    <meta property="og:image" content="https://www.block-up.tech/assets/favicon.png">
     <meta name="twitter:image" content="https://landingsite-app-public.s3.us-east-2.amazonaws.com/client-files/f9262859-754c-4465-9290-0072f752581b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,25 +68,16 @@
             font-feature-settings: normal;
             font-variation-settings: normal;
         }
-       .video-container {
-    margin-top:100px; /* Adjust as needed */
-}
-        video {
-            display: block;
-            width: 100%;
-            margin-top: 80px; /* Match the height of the header to prevent overlap */
-        }
-
 
         body {
             margin: 0;
             font-size: 1rem;
             font-size: small;
             font-weight: 400;
-            font-family: Graphik,Arial,Helvetica,sans-serif;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             color: purple;
             text-align: left;
-            background-color: #000;
+            background-color: #fff;
         }
 
 
@@ -740,7 +731,7 @@
 
         .bg-gray-900 {
             --tw-bg-opacity: 1;
-            background-color: rgb(17 24 39 / var(--tw-bg-opacity))
+            background-color: rgb(185 68 128);
         }
 
         .bg-lime-50 {
@@ -1788,17 +1779,27 @@
 
         @keyframes logoMove {
             0% {
-                transform: translateX(-300%);
+                transform: translateX(-250%);
             }
 
-
-            50% {
-                transform: translateX(0%);
+            20% {
+                transform: translateX(-175%);
             }
 
+            40% {
+                transform: translateX(-100%);
+            }
+
+            60% {
+                transform: translateX(-25%);
+            }
+
+            80% {
+                transform: translateX(50%);
+            }
 
             100% {
-                transform: translateX(250%);
+                transform: translateX(125%);
             }
         }
 
@@ -1811,7 +1812,7 @@
         .dropdown-menu {
             display: none;
             position: absolute;
-            background-color: black;
+            background-color: white;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
@@ -1826,6 +1827,7 @@
             .dropdown-item:hover {
                 background-color: #ddd;
             }
+
         #feature-3-circle {
             /* Ensure that the blue background color is applied */
             background-color: blue;
@@ -1834,9 +1836,11 @@
         #feature-2-circle {
             background-color: purple;
         }
+
         #feature-1-circle {
             background-color: darkblue;
         }
+
         #nav-cta a {
             /* Base button styles */
             background-color: purple;
@@ -1858,19 +1862,10 @@
             color: purple;
         }
 
-#myVideo {
-     position: relative;
-     top: 0;
-     left: 0;
-     height:fit-content;
-     width:100%;/* 100% of viewport height */
-     object-fit:cover
-     
- }
         /* Base styles */
         header #nav-links a,
         header .dropdown button {
-            color: white; /* Base text color */
+            color: black; /* Base text color */
             text-decoration: none; /* Remove underline */
             padding: 10px; /* Add some padding for better hover effect */
             border-radius: 5px; /* Optional: Add border radius for rounded corners */
@@ -1884,21 +1879,37 @@
                 color: white; /* White text */
             }
 
-        media (max-width: 767px) {
-            #nav-name-text
-        {
-            display: none;
-        }}
+        .container1 {
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .left-c {
+            float: left;
+            width: 45%;
+            align-items: center;
+        }
+
+        .right-c {
+            float: right;
+            width: 45%;
+            align-items: baseline;
+        }
+
+        .map-content-9 {
+            align-content: center;
+            align-items: center;
+        }
     </style>
 </head>
-<body style="background:black">
-    <header id="site-header" class="fixed-top" style="background:black">
+<body>
+    <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
                 <h1>
                     <div class="flex items-center">
                         <img src="assets/logo.png" alt="Block-UP Logo" class="logo" />
-                        <a id="nav-name-text" href="https://www.block-up.tech/" class="primary-color-text text-white text-2xl lg:text-3xl xl:font-bold">Block-UP Technologies</a>
+                        <a id="nav-name-text" href="https://www.block-up.tech/" class="primary-color-text text-gray-900 text-2xl lg:text-3xl xl:font-bold">BLOCK-UP</a>
                     </div>
                 </h1>
 
@@ -1923,11 +1934,11 @@
                         <div class="dropdown-menu" id="advisory-dropdown-menu" aria-labelledby="advisory-dropdown">
                             <a class="dropdown-item" href="#">Chain Management</a>
                             <a class="dropdown-item" href="#">Project Management</a>
-                            
+
 
                         </div>
                     </div>
-                    <a href="#" class="how-it-works-link xl:font-thin text-gray-900">Edu-Tech</a>
+                    <a href="edu.html" class="how-it-works-link xl:font-thin text-gray-900">Edu-Tech</a>
 
                 </div>
 
@@ -1950,23 +1961,19 @@
             </nav>
         </div>
     </header>
-
-<div id="header">
-    <video id="myVideo" autoplay muted loop>
-        <source src="assets/intro1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    </div>
+</body>
+</html>
 
 
-<section class="code-section bg-gradient-to-b from-white to-[#F2F9FF]    font-['Poppins'] lg:py-2" id="jkaj6s">
+
+<section class="code-section bg-gradient-to-b from-white to-[#F2F9FF] font-['Poppins'] lg:py-2" id="jkaj6s">
     <div class="container mx-auto mb-24 px-6">
         <div class="flex flex-col-reverse items-center lg:flex-row">
-            <div class="mt-12 w-full lg:mt-32 lg:w-[45%] lg:pr-14">
+            <div class="mt-12 w-full lg:mt-32 lg:w-[55%] lg:pr-14">
                 <h1 id="hero-header-text" class="mb-4 text-center lg:text-left text-3xl lg:text-3xl xl:text-3xl font-black xl:font-black">Leverage Advanced Technology. Empower Your Success.</h1>
-                <p id="hero-subtext" class="mb-14 text-center text-white lg:text-left xl:font-extralight text-sm xl:text-lg">At Block-UP Technologies, we provide comprehensive <br> Technology as a Service (TaaS) solutions to transform your business processes in the digital frontier. Our mission is to drive innovation by leveraging our expertise and innovation in advanced technology.</p>
+                <p id="hero-subtext" class="mb-14 text-center text-gray-700 lg:text-left xl:font-extralight text-sm xl:text-lg">At Block-UP, we provide comprehensive <br> Technology as a Service (TaaS) solutions to transform your business processes in the digital frontier. Our mission is to drive innovation by leveraging our expertise and innovation in advanced technology.</p>
                 <div id="hero-waitlist-input" class="relative mb-12">
-                    <input type="email" class="mb-2 w-full rounded border bg-white border-white py-4 pl-6 placeholder-gray-600 xl:mb-0 xl:py-6 xl:pr-20" placeholder="Enter your email address">
+                    <input type="email" class="mb-2 w-full rounded border border-white py-4 pl-6 placeholder-gray-600 xl:mb-0 xl:py-6 xl:pr-20" placeholder="Enter your email address">
                     <button class="xl:py-23 primary-color-bg h-[52px] w-full rounded px-5 text-white xl:absolute xl:inset-y-0 xl:right-1 xl:top-1/2 xl:mr-4 xl:w-auto xl:-translate-y-1/2 xl:transform purple-bg font-extralight xl:font-extralight text-sm xl:text-sm">Join technology list</button>
                 </div>
 
@@ -1979,7 +1986,7 @@
                     <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHwzfHxtYWxlfGVufDB8MHx8fDE2OTQ5NDAyNDV8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1920" alt="Happy Customer" class="testimonial-image dont-replace mr-4 h-[72px] w-[72px] rounded-full object-cover" data-media="{&quot;id&quot;:&quot;v2aKnjMbP_k&quot;,&quot;src&quot;:&quot;unsplash&quot;,&quot;type&quot;:&quot;image&quot;}" oncontextmenu="return false;">
                     <div class="">
                         <i class="fa-sharp fa-solid fa-quote-left relative -top-2 mr-1"></i>
-                        <p id="testimonial-1-quote" class="mb-2 inline text-gray-700 text-sm xl:text-sm">Block-UP Technologies has empowered us with top-notch technology solutions, ensuring efficiency and allowing us to focus on our core business.</p>
+                        <p id="testimonial-1-quote" class="mb-2 inline text-gray-700 text-sm xl:text-sm">Block-UP has empowered us with top-notch technology solutions, ensuring efficiency and allowing us to focus on our core business.</p>
                         <i class="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"></i><br>
                         <p>
                             <span id="testimonial-1-name" class="font-semibold text-gray-900">Jane Doe</span>
@@ -1989,7 +1996,7 @@
                 </div>
             </div>
             <div class="relative w-full lg:w-[55%] lg:pl-6 2xl:mt-0">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHwxfHxBZHZhbmNlZCUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTY5NDkzNDA5NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1920" alt="Hero" class="seo-image mt-8 h-auto w-[100%] shadow-xl shadow-blue-100 lg:mt-0 dont-replace" data-media="{&quot;id&quot;:&quot;ZPeXrWxOjRQ&quot;,&quot;src&quot;:&quot;unsplash&quot;,&quot;type&quot;:&quot;image&quot;}" oncontextmenu="return false;">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHwxfHxBZHZhbmNlZCUyMHRlY2hub2xvZ3l8ZW58MHwwfHx8MTY5NDkzNDA5NHww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2560" alt="Hero" class="seo-image mt-8 h-[2560px] w-[100%] shadow-xl shadow-blue-100 lg:mt-0 dont-replace" data-media="{&quot;id&quot;:&quot;ZPeXrWxOjRQ&quot;,&quot;src&quot;:&quot;unsplash&quot;,&quot;type&quot;:&quot;image&quot;}" oncontextmenu="return false;">
             </div>
         </div>
     </div>
@@ -2008,11 +2015,11 @@
                 <img src="https://landingsite-app-public.s3.us-east-2.amazonaws.com/client-files/31f75d59-5c93-44a9-aecf-e91b768b71b1" alt="Logo 5" class="dont-replace" oncontextmenu="return false;">
                 <img src="https://landingsite-app-public.s3.us-east-2.amazonaws.com/client-files/18b6aa74-c9fd-4c54-9458-344860afe5d7" alt="Logo 6" class="dont-replace" oncontextmenu="return false;">
                 <img src="assets/1.jpeg" style="width: 200px; margin: 10px;">
-               
+
                 <img src="assets/3.jpg" style="width: 200px; margin: 10px;">
                 <img src="assets/6.jpeg" style="width: 200px; margin: 10px;">
                 <img src="assets/7.jpg" style="width: 200px; margin: 10px;">
-                
+
                 <img src="assets/9.png" style="width: 200px; margin: 10px;">
                 <img src="assets/10.png" style="width: 200px; margin: 10px;">
 
@@ -2025,12 +2032,12 @@
 <section class="code-section font-['Poppins']" id="hr8clw">
     <div class="container mx-auto px-6 lg:pt-24">
         <div id="hero-rtl" class="flex flex-col items-stretch lg:flex-row">
-            <div class="primary-color-bg primary-color-[900] flex flex-1 items-center justify-center rounded-3xl p-6 lg:w-1/2 bg-gray-50">
+            <div class="primary-color-bg primary-color-[50] flex flex-1 items-center justify-center rounded-3xl p-6 lg:w-1/2 bg-gray-50">
                 <img class="mx-auto rounded-3xl dont-replace" src="https://images.unsplash.com/photo-1632137349293-14d5e9f0e0ef?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHw1NXx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZXxlbnwwfDB8fHwxNjk0OTM5ODA0fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1920" alt="Hero" data-media="{&quot;id&quot;:&quot;aASWYaw-3HI&quot;,&quot;src&quot;:&quot;unsplash&quot;,&quot;type&quot;:&quot;image&quot;}" oncontextmenu="return false;">
             </div>
             <div class="pt-8 lg:w-1/2 lg:pl-20 lg:pr-12 lg:pt-0">
-                <h2 id="hero-rtl-header" class="mb-4 text-center font-bold lg:text-left text-3xl lg:text-3xl xl:text-3xl">Why Choose Block-UP Technologies?</h2>
-                <p id="hero-rtl-subtext" class="mb-6 text-center lg:text-left text-zinc-700 xl:font-extralight text-sm xl:text-lg">Block-UP Technologies is more than just another SECaaS provider. We understand the unique needs and challenges faced by businesses operating in today's digital environment and offer features that set us apart.</p>
+                <h2 id="hero-rtl-header" class="mb-4 text-center font-bold lg:text-left text-3xl lg:text-3xl xl:text-3xl">Why Choose Block-UP?</h2>
+                <p id="hero-rtl-subtext" class="mb-6 text-center lg:text-left text-zinc-700 xl:font-extralight text-sm xl:text-lg">Block-UP is more than just another SECaaS provider. We understand the unique needs and challenges faced by businesses operating in today's digital environment and offer features that set us apart.</p>
                 <ul id="hero-rtl-list" class="mb-12 list-disc pl-6 text-xl">
                     <li class="text-sm xl:font-extralight" style="color: black;">24/7 vigilant security monitoring</li>
                     <li class="text-sm xl:font-extralight" style="color: black;">Dedicated expert analysts</li>
@@ -2045,7 +2052,7 @@
                     <img src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHw4fHwlMjJDeWJlcnNlY3VyaXR5JTIyfGVufDB8MHx8fDE2OTQ5MzM3MDN8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1920" alt="Profile" class="testimonial-image dont-replace mr-4 h-[72px] w-[72px] rounded-full object-cover" data-media="{&quot;id&quot;:&quot;Fa9b57hffnM&quot;,&quot;src&quot;:&quot;unsplash&quot;,&quot;type&quot;:&quot;image&quot;}" oncontextmenu="return false;">
                     <div class="">
                         <i class="fa-sharp fa-solid fa-quote-left relative -top-2 mr-1"></i>
-                        <p id="testimonial-2-quote" class="mb-2 inline text-sm text-gray-700 xl:font-extralight">Outsourcing our cybersecurity to Block-UP Technologies was one of the best decisions we ever made. I can sleep easy knowing our systems are secure.</p>
+                        <p id="testimonial-2-quote" class="mb-2 inline text-sm text-gray-700 xl:font-extralight">Outsourcing our cybersecurity to Block-UP was one of the best decisions we ever made. I can sleep easy knowing our systems are secure.</p>
                         <i class="fa-sharp fa-solid fa-quote-right relative -top-2 ml-1"></i>
                         <p>
                             <span id="testimonial-2-name" class="font-semibold text-gray-900">Jane Doe</span>
@@ -2137,7 +2144,7 @@
             <div id="feature-1" class="max-w-sm flex-1 rounded-3xl bg-white p-14 text-center shadow-xl shadow-blue-100">
                 <div id="feature-1-circle" class="primary-color-bg primary-color-[50] mx-auto mb-4 mt-2 flex h-20 w-20 items-center justify-center rounded-3xl text-4xl bg-blue-900">
                     <span id="feature-1-icon" class="primary-color-gradient primary-color-from-[200] primary-color-to-[500] bg-gradient-to-b bg-clip-text text-transparent from-gray-200 to-gray-500">
-                        <i class="fas fa-shield-alt   text-white"   aria-hidden="true"></i>
+                        <i class="fas fa-shield-alt   text-white" aria-hidden="true"></i>
 
                     </span>
 
@@ -2350,67 +2357,57 @@
     </div>
 </section>
 
-<section class="w3l-contact-1 py-5" id="contact">
-    <div class="contacts-9 py-lg-5 py-md-4">
-        <div class="container">
-            <div class="contactct-fm map-content-9">
-                <div class="header-title text-center">
-
-                    <h3 class="title-w3l mb-2">
-
+<section class="w3l-contact-1 py-5" id="contact" style="background-color: #f5f5f5;">
+    <div class="container">
+        <div class="row contact-view align-items-center">
+            <div class="col-lg-6 cont-details">
+                <div class="contactct-fm-text">
+                    <h6 class="title-subhny"><span>Find Us</span></h6>
+                    <h3 class="title-w3l mb-4">
+                        Chennai <span class="span-bold"> Office</span>
+                    </h3>
+                    <div class="cont-top d-flex align-items-center mb-4">
+                        <div class="cont-left">
+                            <span class="fas fa-phone"></span>
+                        </div>
+                        <div class="cont-right ms-3">
+                            <h5>Phone Number</h5>
+                            <p><a href="tel:+91(044)27878013">+91 (044) 27178013</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top d-flex align-items-center mb-4">
+                        <div class="cont-left">
+                            <span class="fas fa-envelope-open-text"></span>
+                        </div>
+                        <div class="cont-right ms-3">
+                            <h5>Send Email</h5>
+                            <p><a href="mailto:business@block-up.tech" class="mail">business@block-up.tech</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top d-flex align-items-center">
+                        <div class="cont-left">
+                            <span class="fas fa-map-marker-alt"></span>
+                        </div>
+                        <div class="cont-right ms-3">
+                            <h5>Office Address</h5>
+                            <p>No: 5/315, Nallur, Somangalam Main Road<br>Kundrathur, Kancheepuram District, Chennai <br>Tamil Nadu - 600069, INDIA</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-            <div class="row contact-view my-5 py-lg-5">
-                <div class="col-lg-6 cont-details">
-                    <div class="contactct-fm-text text-left">
-                        <h6 class="title-subhny"><span>Find Us</span></h6>
-                        <h3 class="title-w3l mb-5">
-                            Chennai
-                            <span class="span-bold"> Office</span>
-                        </h3>
-                        <div class="cont-top">
-                            <div class="cont-left text-">
-                                <span class="fas fa-phone"></span>
-                            </div>
-                            <div class="cont-right">
-                                <h5>&nbsp;  Phone number</h5>
-                                <p><a href="tel:+91(044)27878013">&nbsp;&nbsp;+91 (044) 27178013</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top margin-up">
-                            <div class="cont-left text-center">
-                                <span class="fas fa-envelope-open-text"></span>
-                            </div>
-                            <div class="cont-right">
-                                <h5> &nbsp;Send Email</h5>
-                                <p><a href="mailto:business@block-up.tech" class="mail">&nbsp;&nbsp;business@block-up.tech</a></p>
-                            </div>
-                        </div>
-                        <div class="cont-top margin-up">
-                            <div class="cont-left text-center">
-                                <span class="fas fa-map-marker-alt"></span>
-                            </div>
-                            <div class="cont-right">
-                                <h5>&nbsp;Office Address</h5>
-                                <p class="pr-lg-5">&nbsp;&nbsp;No: 5/315,Nallur, Somangalam Main Road<br>&nbsp;&nbsp;Kundrathur, Kancheepuram District,Chennai <br>&nbsp;&nbsp;TamilNadu ,INDIA -600069.</p><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-content-9">
-                    <div class="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.2288319667828!2d80.02698107507616!3d12.957203987356847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU3JzI1LjkiTiA4MMKwMDEnNDYuNCJF!5e0!3m2!1sen!2sin!4v1710505501394!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <div class="col-lg-6 right-c">
+                <div class="map-content-9" style="margin-top: -20px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.2288319667828!2d80.02698107507616!3d12.957203987356847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU3JzI1LjkiTiA4MMKwMDEnNDYuNCJF!5e0!3m2!1sen!2sin!4v1710505501394!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
-<footer class="code-section py-16 font-['Poppins']" id="k0f9k">
+<footer class="code-section py-16 font-['Poppins'] bg-gray-50" id="k0f9k">
     <div id="footer" class="container mx-auto px-4 text-center">
         <div class="m-8 text-xl font-bold">
-            <a id="footer-brand-name" href="#" class="primary-color-text text-3xl text-gray-900">Block-UP Technologies</a>
+            <a id="footer-brand-name" href="#" class="primary-color-text text-3xl text-gray-900">Block-UP</a>
         </div>
         <div id="footer-nav-links" class="mb-8 flex flex-col justify-center sm:flex-row">
             <a href="#  " class="mx-8 text-gray-700 hover:text-blue-500 xl:font-extralight text-sm xl:text-sm">Privacy Policy</a>
@@ -2428,7 +2425,7 @@
             </a>
 
         </div>
-        <p id="footer-copyright" class="text-gray-600 text-xs xl:text-xs">© 2023 Block-UP Technologies, Inc. All rights reserved.</p>
+        <p id="footer-copyright" class="text-gray-600 text-xs xl:text-xs">© 2023 Block-UP , Inc. All rights reserved.</p>
     </div>
 
 
@@ -2483,22 +2480,16 @@
 </script>
 <script>
     function toggleMobileMenu() {
-        var navLinksMobile = document.getElementById("nav-links-mobile");
+        var navLinksMobile = document.getElementById("nav-links");
         navLinksMobile.classList.toggle("hidden");
 
         var menuIcon = document.getElementById("menu-icon");
-        menuIcon.classList.toggle("feather-menu"); // Toggle menu icon
-        menuIcon.classList.toggle("feather-x"); // Toggle close icon
-
-        // Toggle visibility of nav-links
-        var navLinks = document.getElementById("nav-links");
-        navLinks.classList.toggle("hidden");
+        menuIcon.classList.toggle("feather-menu");
+        menuIcon.classList.toggle("feather-x");
     }
 
-</script>
-<script>
     function toggleDropdown(menuId) {
-        var dropdownMenu = document.getElementById(menuId + '-menu');
+        var dropdownMenu = document.getElementById(menuId + '-dropdown-menu');
         dropdownMenu.classList.toggle('hidden');
     }
 
@@ -2514,35 +2505,9 @@
             }
         }
     }
-
-        < script >
-    const logoContainer = document.getElementById('logo-cloud-images');
-    let cloneContainer = logoContainer.cloneNode(true);
-    logoContainer.parentNode.appendChild(cloneContainer);
-
-    function animateLogos() {
-        const speed = 50; // Speed can be adjusted
-        const move = () => {
-            logoContainer.style.transform = `translateX(${-window.scrollX}px)`;
-            cloneContainer.style.transform = `translateX(${-window.scrollX}px)`;
-
-            if (window.scrollX >= logoContainer.offsetWidth) {
-                window.scrollTo(0, 0);
-            } else {
-                window.scrollBy(speed, 0);
-            }
-
-            requestAnimationFrame(move);
-        };
-
-        move();
-    }
-
-    window.onload = animateLogos;
 </script>
 
 
-</script>
 
 
 <script defer src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
